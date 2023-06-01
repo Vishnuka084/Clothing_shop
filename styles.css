@@ -40,3 +40,97 @@ body{
     width: 100%;
 }
 
+
+.logo  {
+    color: rgba(149, 102, 35);
+    text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+    font-size: 30px;
+}
+#header{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0b 5px 15px rgba(28, 12, 12, 0.06);
+    background: rgba(156, 208, 198,0.1);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    color: rgba(149, 102, 35);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(85, 127, 113) ;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: rgb(85, 127, 113);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero{
+    background-image: url(https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero h4
+{
+    padding-bottom: 15px;
+}
+#hero h1
+{
+    color: rgb(138, 39, 9);
+}
+#hero button{
+    background-color: transparent;
+    color:rgb(85, 127, 113) ;
+
+
+    padding: 14px 70px 14px 65px;
+
+    font-size: 18px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.2s ease;
+
+
+}
